@@ -32,14 +32,25 @@ input {
   height: 40px;
   margin-top: 5px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .effacer {
   position: relative;
-  bottom: 110px;
-  left: 120px;
+  bottom: 103px;
+  left: 172px;
   background-color: red;
   border: none;
   color: white;
   border-radius: 5px;
+  font-size: 20px;
+}
+
+.modifier {
+  position: relative;
+  background-color: blue;
+  color: white;
+  border-color: transparent;
+  font-size: 15px;
+  left: 100px;
 }

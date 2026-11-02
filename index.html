@@ -15,14 +15,20 @@
 
   <header>
     <h1>Mes post-it</h1>
-    <p>Cliquez sur une note pour modifier son texte.</p>
+    <!-- <p>Cliquez sur une note pour modifier son texte.</p> -->
+     <form action="" class="formulaire">
+      <input type="email" id="inputemail" placeholder="email...."></input>
+      <input type="password" id="inputpassword" placeholder="password...."></input>
+      <button id="login">login</button>
+     </form>
+     
+        <input type="text" id="inputTitre" placeholder="Titre...."></input>
+      <input type="text" id="inputcontenu" placeholder="contenu...."></input>
+      <button type="button" class="ajouter">+</button>
   </header>
 
   <main class="board">
-    <div class="notes" contenteditable="true">
-      <input type="text" id="inputTitre" placeholder="Titre...."></input>
-      <input type="text" id="inputcontenu" placeholder="contenu...."></input>
-      <button type="button" class="ajouter">+</button>
+    <div class="notes" contenteditable="false">
     </div>
   </main>
 
