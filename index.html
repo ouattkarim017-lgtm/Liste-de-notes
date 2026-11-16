@@ -8,28 +8,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="javaScript.js" defer type="module"></script>
+  <script type="module" src="index.js" defer></script>
+  <script type="module" src="addnote.js" defer></script>
+  <script type="module" src="delete.js" defer></script>
+  <script type="module" src="config.js"></script>
 </head>
 
 <body>
 
   <header>
     <h1>Mes post-it</h1>
-    <!-- <p>Cliquez sur une note pour modifier son texte.</p> -->
-     <form action="" class="formulaire">
-      <input type="email" id="inputemail" placeholder="email...."></input>
-      <input type="password" id="inputpassword" placeholder="password...."></input>
-      <button id="login">login</button>
-     </form>
-     
-        <input type="text" id="inputTitre" placeholder="Titre...."></input>
-      <input type="text" id="inputcontenu" placeholder="contenu...."></input>
-      <button type="button" class="ajouter">+</button>
+    <p id= "status"></p>
+    <form id="note-from">
+        <input type="text" id="inputTitre" placeholder="Titre....">
+      <input type="text" id="inputContenu" placeholder="contenu....">
+      <button type="submit" class="ajouter">+</button>
+    </form>
   </header>
 
   <main class="board">
     <div class="notes" contenteditable="false">
     </div>
+    <p id="erreur"></p>
+    <p id="statut">Chargement… (le premier appel peut prendre jusqu’à 60 secondes)</p>
   </main>
 
 </body>

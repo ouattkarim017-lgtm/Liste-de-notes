@@ -1,0 +1,1 @@
+export const API_URL = "https://momo-api-dev-1.onrender.com/api";

@@ -11,7 +11,7 @@ header {
   justify-content: center;
 }
 
-.carte {
+.note {
     background-color: burlywood;
     width: 300px;
     gap: 20px;
@@ -37,13 +37,12 @@ input {
 
 .effacer {
   position: relative;
-  bottom: 103px;
-  left: 172px;
   background-color: red;
+  padding: 10px;
   border: none;
   color: white;
   border-radius: 5px;
-  font-size: 20px;
+  cursor: pointer;
 }
 
 .modifier {
@@ -53,4 +52,26 @@ input {
   border-color: transparent;
   font-size: 15px;
   left: 100px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#login {
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.auteur {
+  color: rgba(255, 255, 255, 0.641);
 }
